@@ -2,7 +2,7 @@
 
 ## Objective
 
-This Lab aimed to design and build an automated workflow similar to a Next-Gen Security Operation Centre (SOC). It leverages a SIEM, an automation platform, and AI to handle the initial investigation of a security alert automatically. The system triages, enriches with threat intelligence, summarises, and reports on alerts, which reduces the workload for Tier 1 analysts.
+This Lab aimed to design and build an automated workflow similar to a Next-Gen Security Operation Centre (SOC). It leverages a SIEM, an automation platform, and AI to handle the initial investigation of a security alert automatically. The system triages, enriches with threat intelligence, summarises, and reports on alerts, which reduces the workload for L1 analysts.
 
 ### Skills Learned
 
@@ -25,6 +25,7 @@ This Lab aimed to design and build an automated workflow similar to a Next-Gen S
 
 
 
+
 ## Steps
 drag & drop screenshots here or use imgur and reference them using imgsrc
 
@@ -32,4 +33,5 @@ Every screenshot should have some text explaining what the screenshot is about.
 
 Example below.
 
-*Ref 1: Network Diagram*
+*Ref 1: Architecture Diagram*
+![Architecture Diagram (SOC-Project)](https://github.com/user-attachments/assets/0dd6af91-b1ad-4121-b83d-d45de7a96432)
