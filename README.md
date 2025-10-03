@@ -34,4 +34,5 @@ Every screenshot should have some text explaining what the screenshot is about.
 Example below.
 
 *Ref 1: Architecture Diagram*
+
 ![Architecture Diagram (SOC-Project)](https://github.com/user-attachments/assets/0dd6af91-b1ad-4121-b83d-d45de7a96432)
