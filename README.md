@@ -1,25 +1,29 @@
 # SOC Automation Project
 
 ## Objective
-[Brief Objective - Remove this afterwards]
 
-The Detection Lab project aimed to establish a controlled environment for simulating and detecting cyber attacks. The primary focus was to ingest and analyze logs within a Security Information and Event Management (SIEM) system, generating test telemetry to mimic real-world attack scenarios. This hands-on experience was designed to deepen understanding of network security, attack patterns, and defensive strategies.
+This Lab aimed to design and build an automated workflow similar to a Next-Gen Security Operation Centre (SOC). It leverages a SIEM, an automation platform, and AI to handle the initial investigation of a security alert automatically. The system triages, enriches with threat intelligence, summarises, and reports on alerts, which reduces the workload for Tier 1 analysts.
 
 ### Skills Learned
-[Bullet Points - Remove this afterwards]
 
-- Advanced understanding of SIEM concepts and practical application.
-- Proficiency in analyzing and interpreting network logs.
-- Ability to generate and recognize attack signatures and patterns.
-- Enhanced knowledge of network protocols and security vulnerabilities.
-- Development of critical thinking and problem-solving skills in cybersecurity.
+- **Security Orchestration, Automation, and Response (SOAR)**: Designing and implementing an end-to-end automation pipeline to connect different security tools.
+- **SIEM Implementation & Management**: Deploying, configuring, and managing Splunk for log ingestion, searching, and alerting.
+- **API Integration**: Connecting Gemini, AbuseIPDB, and Slack through their APIs to automate the workflow. 
+- **Threat Intelligence**: Used AbuseIPDB to enrich the IOC.
+- **VM**: Building and managing multi-VM environments using VMware, such as Windows and Ubuntu.
+- **Docker**: Deploying and managing application (N8N) using Docker.
 
 ### Tools Used
-[Bullet Points - Remove this afterwards]
+- **Splunk**: SIEM Platform
+- **N8N**: Core automation and workflow engine
+- **Gemini**: AI analysis and reporting
+- **AbuseIPDB**: IP Address threat intelligence enrichment
+- **VMWare**: Lab Environment
+- **Docker**: Deployment of N8N
+- **Slack**: Automated Alert Notifications
+- **OS**: Windows 10 (Log Source) & Ubuntu Server (Splunk, N8N)
 
-- Security Information and Event Management (SIEM) system for log ingestion and analysis.
-- Network analysis tools (such as Wireshark) for capturing and examining network traffic.
-- Telemetry generation tools to create realistic network traffic and attack scenarios.
+
 
 ## Steps
 drag & drop screenshots here or use imgur and reference them using imgsrc
