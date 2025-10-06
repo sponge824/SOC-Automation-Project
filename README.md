@@ -29,8 +29,14 @@ This Lab aimed to design and build an automated workflow similar to a Next-Gen S
 ## Steps
 
 
-*Ref 1: Architecture Diagram*
+**Ref 1: Architecture Diagram**
 
 ![Architecture Diagram (SOC-Project)](https://github.com/user-attachments/assets/0dd6af91-b1ad-4121-b83d-d45de7a96432)  
 
 This diagram shows the automation workflow for the project. Logs from the Windows 10 VM are sent with Splunk Universal Forwarder to Splunk. Splunk generates an alert that triggers a webhook in N8N. N8N then coordinates API calls to Gemini and AbuseIPDB for analysis and enrichment before sending a report to Slack.
+
+**Ref 2: Log Ingestion in Splunk**
+<img width="1913" height="907" alt="image" src="https://github.com/user-attachments/assets/a602e648-9967-4e2b-9589-d1abf55efb22" />
+
+This screenshot shows that the Splunk Universal Forwarder on the Windows 10 VM is successfully sending security event logs to the Splunk indexer.
+
