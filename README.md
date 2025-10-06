@@ -48,12 +48,24 @@ This is the Splunk alert that is configured to detect brute force. It uses Searc
 **Ref 4: N8N Automation Workflow**
 <img width="922" height="463" alt="image" src="https://github.com/user-attachments/assets/710e03d7-8ef9-4db0-97f7-bb0c34909e36" />
 
-This N8N automation workflow begins by receiving security alerts (e.g. Brute-Force) through a webhook. The incoming information is then passed to Gemini AI model to analyzes the content, potentially querying AbuseIPDB to enrich the data with IP reputation details before forming its response. Once the analysis and enrichment are complete, the final output is formatted and sent directly to a Slack channel.
+This N8N automation workflow begins by receiving security alerts (e.g. Brute-Force) through a webhook. The incoming information is then passed to the Gemini AI model to analyse the content, potentially querying AbuseIPDB to enrich the data with IP reputation details before forming its response. Once the analysis and enrichment are complete, the final output is formatted and sent directly to a Slack channel.
 
 **Ref 5: AI Prompt Engineering**
 <img width="761" height="714" alt="image" src="https://github.com/user-attachments/assets/f9336948-109d-4cbd-b711-14012926a493" />
 
 This is the prompt used for the automation workflow. The AI acts as a Tier 1 SOC Analyst, providing a structured output that includes a summary, IOC enrichment, severity assessment (mapped to MITRE ATTACK), and recommended response action.
+
+**Ref 6: Threat Intelligence Enrichment**
+<img width="524" height="789" alt="image" src="https://github.com/user-attachments/assets/6f982965-fb4b-418b-a8f0-ab5d926fbdc2" />
+
+This is the JSON output from the AbuseIPDB API call within N8N. It confirm that the malicious IP address from the alert was successfully enriched with data, including its geographic location, ISP and high abuse confidence score.
+
+**Ref 7: AI Generated Alert in Slack**
+<img width="1450" height="658" alt="image" src="https://github.com/user-attachments/assets/a5018c57-7b97-43f6-a266-bd5b4f7352e3" />
+
+This message is posted by the automation pipeline in the designated Slack channel. The message contains the information such as a summary of the event, threat intelligence context, severity and recommendations.
+
+
 
 
 
