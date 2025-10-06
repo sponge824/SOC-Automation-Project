@@ -56,7 +56,7 @@ This N8N automation workflow begins by receiving security alerts (e.g. Brute-For
 This is the prompt used for the automation workflow. The AI acts as a Tier 1 SOC Analyst, providing a structured output that includes a summary, IOC enrichment, severity assessment (mapped to MITRE ATTACK), and recommended response action.
 
 **Ref 6: Threat Intelligence Enrichment**
-<img width="524" height="789" alt="image" src="https://github.com/user-attachments/assets/6f982965-fb4b-418b-a8f0-ab5d926fbdc2" />
+<p align="left"><img width="524" height="789" alt="image" src="https://github.com/user-attachments/assets/6f982965-fb4b-418b-a8f0-ab5d926fbdc2" /></p>
 
 This is the JSON output from the AbuseIPDB API call within N8N. It confirm that the malicious IP address from the alert was successfully enriched with data, including its geographic location, ISP and high abuse confidence score.
 
