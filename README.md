@@ -40,3 +40,7 @@ This diagram shows the automation workflow for the project. Logs from the Window
 
 This screenshot shows that the Splunk Universal Forwarder on the Windows 10 VM is successfully sending security event logs to the Splunk indexer.
 
+**Ref3: Brute-Force Alert in Splunk**
+<img width="1212" height="296" alt="image" src="https://github.com/user-attachments/assets/584bf381-f0f2-441f-8b84-0e26bfba2a82" />
+
+This is the Splunk alert that is configured to detect brute force. It uses Search Processing Language (SPL) query to detect failed login attempts (EventCode=4625). The configured action is to trigger the N8N webhook.
